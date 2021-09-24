@@ -19,6 +19,7 @@ jobs:
           ls ${{ github.workspace }}
       - run: echo "🍏 This job's status is ${{ job.status }}."
       - run: echo "my name is ${{env.Name}}"
+      - run: chmod 777 first.sh
       - run: ./first.sh
 env:
     Name: Rajesh C N    
