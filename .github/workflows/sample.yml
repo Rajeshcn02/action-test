@@ -2,6 +2,9 @@ name: GitHub Actions Demo
 
 on: [push]
 
+env:
+ Name: Rajesh C N
+
 jobs:
   Explore-GitHub-Actions:
     runs-on: ubuntu-latest
@@ -17,10 +20,6 @@ jobs:
         run: |
           ls ${{ github.workspace }}
       - run: echo "🍏 This job's status is ${{ job.status }}."
-      
-     env:
-       Name: Rajesh C N
-      
-      - run: echo my name is ${{env.Name}}
+      - run: echo "my name is ${{env.Name}}"
       
       
